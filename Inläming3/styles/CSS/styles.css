@@ -1,9 +1,86 @@
 @charset "UTF-8";
-/* main CSS */
+/* Main CSS */
 /* NOLLSTÄLLNING */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth; }
+
+.header {
+  height: 4rem;
+  width: 100%;
+  background-color: #fee7e6; }
+  .header .navmenu {
+    display: flex;
+    justify-content: center; }
+    .header .navmenu ul {
+      list-style: none; }
+      .header .navmenu ul li {
+        display: inline; }
+  .header .menu-toggle, .header .menu-close {
+    display: none; }
+
+/* .logo {
+    background-image: url('/images/my_image.png');
 }
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+     #logo {
+     background-image: url('/images/my_image@2x.png');
+     background-size: 200px 100px;
+   }
+} */
+/* Sektion 1 */
+.presentation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  background-color: #e9ecf5; }
+  .presentation .presentation__rina {
+    margin: 1rem;
+    width: 14rem; }
+    .presentation .presentation__rina img {
+      max-width: 100%;
+      height: auto; }
+  .presentation .presentation__location {
+    margin: 1rem;
+    width: 30rem; }
+    .presentation .presentation__location img {
+      max-width: 100%;
+      height: auto; }
+
+.products {
+  display: grid;
+  grid-template-rows: 3fr;
+  grid-template-columns: 1fr; }
+  .products img {
+    max-width: 100%;
+    height: auto; }
+
+/* Sektion 1 */
+.presentation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  background-color: #e9ecf5; }
+  .presentation .presentation__rina {
+    margin: 1rem;
+    width: 14rem; }
+    .presentation .presentation__rina img {
+      max-width: 100%;
+      height: auto; }
+  .presentation .presentation__location {
+    margin: 1rem;
+    width: 30rem; }
+    .presentation .presentation__location img {
+      max-width: 100%;
+      height: auto; }
+
+.products {
+  display: grid;
+  grid-template-rows: 3fr;
+  grid-template-columns: 1fr; }
+  .products img {
+    max-width: 100%;
+    height: auto; }

@@ -6,23 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Projekt Rina</title>
     <link rel="stylesheet" href="../styles/CSS/styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar"></nav>
+        <a href=""><img src="" alt="logo" class="logo"/></a>
+        <a href="#menu" class="menu-toggle">
+          <span class="fas fa-bars"></span>
+        </a>
+        <nav id="menu" class="navmenu">
+          <a href="#main-menu-toggle" class="menu-close">
+            <span id="nav__close" class="fas fa-times"></span>
+          </a>
+          <ul class="navmenu__ul">
+            <li>
+              <a href="" class="navmenu__a">Hem</a>
+            </li>
+            <li>
+              <a href="" class="navmenu__a">Boka</a>
+            </li>
+            <li>
+              <a href="" class="navmenu__a">Galleri</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#main-menu-toggel" class="backdrop" tabindex="-1" hidden></a>
     </header>
     <section class="presentation">
-        <div class="presentation__rina"></div>
-        <div class="presentation__location"></div>
+        <div class="presentation__rina">
+            <img src="/img/rina.jpg" alt="Rina">
+            <p>Rina Kashikara</p>
+        </div>
+        <div class="presentation__location">
+            <img src="/img/salon.jpg" alt="salon">
+            <p>Adress: Gatan 5 12345 Stockholm</p>
+        </div>
     </section>
 
     <section class="products">
-        <div></div>
+        <div class="products__card--1">
+        <img src="/img/hair-1.jpg" alt="" class="products__img">
+        <p class="products__des">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, est.
+        </p>
+        <div class="products__price">500kr</div>
+        <button class="products__btn">Boka</button>
+    </div>
+    <div class="products__card--2">
+        <img src="/img/hair-2.jpg" alt="" class="products__img">
+        <p class="products__des">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, magnam!
+        </p>
+        <div class="products__price">600kr</div>
+        <button class="products__btn">Boka</button>
+    </div>
+    <div class="products__card--3">
+        <img src="/img/hair-3.jpg" alt="" class="products__img">
+        <p class="products__des">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ullam!
+        </p>
+        <div class="products__price">450kr</div>
+        <button class="products__btn">Boka</button>
+    </div>
     </section>
 
     <section class="carusell"></section>
 
-    <section class="booking"></section>
+    <section class="booking">
+        <form>
+            <input type="text" placeholder="Namn">
+            <input type="email" name="" id="">
+            <input type="button" value="">
+        </form>
+    </section>
 
     <footer class="footer"></footer>
 

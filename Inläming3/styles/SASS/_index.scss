@@ -1,0 +1,66 @@
+/* Sektion 1 */ 
+
+.presentation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center;
+    background-color: $box-col;
+    
+
+    .presentation__rina {
+        margin: 1rem;
+        width: 14rem;
+
+            img {
+            max-width: 100%;
+            height: auto;
+            }
+
+    }
+
+    .presentation__location {
+        margin: 1rem;
+        width: 30rem;
+            img {
+            max-width: 100%;
+            height: auto;
+            }
+
+    }
+}
+
+.products {
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+
+        .products__card--1 {
+            
+        }
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -25,7 +25,7 @@ gulp.task('styles', async function() {
     .pipe(plumber(function(err) {
         console.log("styles error", err);
     }))
-    .pipe(autoprefixer())
+    //.pipe(autoprefixer())
     .pipe(concat("styles.css"))
     //.pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(sass.sync().on('error', sass.logError))
