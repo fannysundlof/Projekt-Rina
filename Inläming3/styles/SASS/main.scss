@@ -1,5 +1,8 @@
 @import "variables.scss";
 @import "index.scss";
+@mixin retina {
+    
+}
 
 /* main CSS */
 
@@ -10,3 +13,15 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+// retina screen fix
+/* .logo {
+    background-image: url('/images/my_image.png');
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+     #logo {
+     background-image: url('/images/my_image@2x.png');
+     background-size: 200px 100px;
+   }
+} */
