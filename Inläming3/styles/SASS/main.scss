@@ -1,6 +1,5 @@
 @import "variables.scss";
 
-
 /* Main CSS */
 
 /* NOLLSTÄLLNING */
@@ -9,32 +8,66 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
+    
 }
 
 // NAVIGERING // 
-
 .header {
-    height: 4rem;
+    position: fixed;
     width: 100%;
     background-color: $nav;
-
-    .navmenu {
-        display: flex;
-        justify-content: center;
-    
-            ul {
-                list-style: none;
-
-                    li {
-                        display: inline;
-            
-                    }
-            }
-
-    }
-    .menu-toggle, .menu-close {
+    display: flex;
+    box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.8);
+}
+.menu-toggle {
+    padding: 0.5em;
+    font-size: 2.5em;
+    color: $font-col;
+}
+#nav__close {
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    color: $font-col;
+}
+.navmenu {
+    position: fixed;
     display: none;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    background-color: $nav;
+    box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.8);
+}
+.navmenu__a {
+    display: block;
+    padding: 1rem 1rem 1rem 1.5rem;
+    line-height: 1em;
+    color: $font-col;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid $font-col;
+}
+ 
+.navmenu:target {
+    display: block;
+}
+
+.navmenu:target .backdrop {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .menu-toggle {
+        display: none;
     }
+
+   
 }
 
 
@@ -49,6 +82,3 @@
      background-size: 200px 100px;
    }
 } */
-
-
-@import "index.scss";

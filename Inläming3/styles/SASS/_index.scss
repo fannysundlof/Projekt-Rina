@@ -1,3 +1,18 @@
+.background {
+    background-color: $bg-col;
+    height: 100%;
+    width: 100%;
+}
+
+.background-front {
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    background-color: $box-col;
+    box-shadow: 0px 5px 5px rgba(104, 104, 104, 0.8);
+    
+}
+
 /* Sektion 1 */ 
 
 .presentation {
@@ -8,7 +23,7 @@
     
 
     .presentation__rina {
-        margin: 1rem;
+        margin: 5rem 1rem 1rem 1rem;
         width: 14rem;
 
             img {
@@ -20,7 +35,6 @@
 
     .presentation__location {
         margin: 1rem;
-        width: 30rem;
             img {
             max-width: 100%;
             height: auto;
@@ -38,11 +52,22 @@
             
         }
 
-
-        img {
+            img {
             max-width: 100%;
             height: auto;
-        }
+            }
+}
+
+.carusell {
+
+}
+
+.booking {
+
+}
+
+.findus {
+
 }
 
 
