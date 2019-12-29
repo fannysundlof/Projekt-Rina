@@ -2,15 +2,25 @@
     background-color: $bg-col;
     height: 100%;
     width: 100%;
+    position: relative;
+    z-index: -3;
 }
 
 .background-front {
     margin: auto;
-    width: 70%;
+    width: 80%;
     height: 100%;
     background-color: $box-col;
     box-shadow: 0px 5px 5px rgba(104, 104, 104, 0.8);
-    
+    position: relative;
+    z-index: -2;
+}
+
+.header__img {
+    background-image: url(/img/hero.jpg);
+    height: 50vh;
+    width: 100%;
+    opacity: .8;
 }
 
 /* Sektion 1 */ 
@@ -19,59 +29,90 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     justify-items: center;
-    background-color: $box-col;
-    
 
     .presentation__rina {
-        margin: 5rem 1rem 1rem 1rem;
-        width: 14rem;
+        border: 2px solid plum;
+        
 
-            img {
-            max-width: 100%;
-            height: auto;
-            }
-
+        .rina {
+           
+            background-image: url(/img/rina.jpg);
+            background-size: cover;
+        }
     }
 
     .presentation__location {
-        margin: 1rem;
-            img {
-            max-width: 100%;
-            height: auto;
-            }
-
+        
+        width: 50%;
+        height: 50vh;
     }
 }
 
-.products {
+
+.card {
     display: grid;
-    grid-template-rows: 3fr;
-    grid-template-columns: 1fr;
-
-        .products__card--1 {
-            
-        }
-
-            img {
-            max-width: 100%;
-            height: auto;
-            }
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center;
+    grid-row-gap: 1rem;
 }
 
-.carusell {
-
+.card__1, .card__2, .card__3 {
+    display: grid;
+    width: 18rem;
+    grid-template-columns: 18rem;
+    grid-template-rows: 13rem 6rem 2rem 2rem;
+    grid-template-areas: "img" "txt" "price" "btn";
+    background-color: $box-col2;
+    text-align: center;
+    border-radius: .2rem;
+    
+   
 }
 
-.booking {
-
+.card__1--img {
+    grid-area: img;
+    background-image: url(/img/hair-2.jpg);
+    background-size: cover;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+}
+.card__1--txt, .card__2--txt, .card__3--txt {
+    grid-area: txt;
+    margin: 1rem;
+}
+.card__1--price {
+    grid-area: price;
+}
+.card__1--btn {
+    grid-area: btn;
+}
+.card__2--img {
+    background-image: url(/img/hair-3.jpg);
+    background-size: cover;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+}
+.card__3--img {
+    background-image: url(/img/hair-1.jpg);
+    background-size: cover;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
 }
 
-.findus {
 
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .background-front {
+        width: 100%;
+    }
 }
-
-
-
 
 
 
