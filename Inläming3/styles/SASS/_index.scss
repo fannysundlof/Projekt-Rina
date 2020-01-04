@@ -23,7 +23,7 @@
     opacity: .8;
 }
 
-/* Sektion 1 */ 
+/* Section 1 - Presentaion */ 
 
 .presentation {
     display: grid;
@@ -32,13 +32,9 @@
 
     .presentation__rina {
         border: 2px solid plum;
-        
+        background-image: url(/img/rina.jpg);
+        background-size: cover;
 
-        .rina {
-           
-            background-image: url(/img/rina.jpg);
-            background-size: cover;
-        }
     }
 
     .presentation__location {
@@ -48,6 +44,7 @@
     }
 }
 
+/* Section 2 - Cards */ 
 
 .card {
     display: grid;
@@ -65,8 +62,6 @@
     background-color: $box-col2;
     text-align: center;
     border-radius: .2rem;
-    
-   
 }
 
 .card__1--img {
@@ -99,7 +94,44 @@
     border-top-right-radius: .2rem;
 }
 
+/* Section 3 - Booking */ 
 
+.booking {
+    background-color: $nav;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem 0 2rem;
+    align-items: center;
+    
+}
+label {
+    margin: 1rem 0 1rem 0;
+}
+input[type=text], input[type=email], input[type=number] {
+    padding: .8rem;
+    width: 12rem;
+    border: none;
+    border-radius: 4px;
+    box-shadow: -1px 1px 5px rgba(148, 148, 148, 0.548);
+}
+
+input[type=button] {
+    width: 12rem;
+    margin-top: 1rem;
+    
+}
+
+textarea {
+    padding: .5rem;
+    max-width: 400px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: -1px 1px 5px rgba(148, 148, 148, 0.548);
+
+}
 
 
 
