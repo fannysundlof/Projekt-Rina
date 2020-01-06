@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Projekt Rina</title>
     <link rel="stylesheet" href="../styles/CSS/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body class="background">
-    <header class="header"> 
-        <a href="#menu" class="menu-toggle"><span class="fas fa-bars"></span></a>
-        <nav id="menu" class="navmenu">
-          <a href="#main-menu-toggle" class="menu-close"><span id="nav__close" class="fas fa-times"></span></a>
-          <ul class="navmenu__ul">
-            <li>
-              <a href="" class="navmenu__a">Hem</a>
-            </li>
-            <li>
-              <a href="#products" class="navmenu__a">Behandlingar</a>
-            </li>
-            <li>
-              <a href="" class="navmenu__a">Boka</a>
-            </li>
-            <li>
-              <a href="" class="navmenu__a">Hitta hit</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="#main-menu-toggel" class="backdrop" tabindex="-1" hidden></a>
+  </head>
+  <body class="background">
+    <header class="header">
+      <a href="#menu" class="menu-toggle"><span class="fas fa-bars"></span></a>
+      <nav id="menu" class="navmenu">
+        <a href="#main-menu-toggle" class="menu-close"
+          ><span id="nav__close" class="fas fa-times"></span
+        ></a>
+        <ul class="navmenu__ul">
+          <li>
+            <a href="" class="navmenu__a">Hem</a>
+          </li>
+          <li>
+            <a href="#products" class="navmenu__a">Behandlingar</a>
+          </li>
+          <li>
+            <a href="#boka" class="navmenu__a">Boka</a>
+          </li>
+          <li>
+            <a href="" class="navmenu__a">Hitta hit</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#main-menu-toggel" class="backdrop" tabindex="-1" hidden></a>
     </header>
     <div class="background-front">
+
       <div class="header__img"></div>
-
-
-    <section class="presentation">
-        <div class="presentation__rina">
-            <div class="rina"></div>
-            <p>Rina Kashihara</p>  
-        </div>
-        <div class="presentation__location">
-            <img src="" alt="salon">
-            <p>Adress: Gatan 5 12345 Stockholm</p>
-        </div>
-    </section>
-
-    <section class="card" id="products">
-        <div class="card__1">
-        <div class="card__1--img"></div>
-        <p class="card__1--txt">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, est.
-        </p>
-        <div class="card__1--price">500kr</div>
-        <button class="card__1--btn">Boka</button>
-    </div>
-    <div class="card__2">
-        <div class="card__2--img"></div>
-        <p class="card__2--txt">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, magnam!
-        </p>
-        <div class="card__2--price">600kr</div>
-        <button class="card__2--btn">Boka</button>
-    </div>
-    <div class="card__3">
-      <div class="card__3--img"></div>
-        <p class="card__3--txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ullam!
-        </p>
-        <div class="card__3--price">450kr</div>
-        <button class="card__3--btn">Boka</button>
-    </div>
-    </section>
-
-    <section class="carusell"></section>
-
-    <section class="booking">
-        <form>
-            <label for="name">Namn</label>
-            <input type="text" placeholder="Namn">
-            <label for="tel">Nummer</label>
-            <input type="number" placeholder="+46">
-            <label for="email">Email</label>
-            <input type="email" name="" id="">
-            <label for="msg">Meddelande</label>
-            <textarea name="msg" id="" cols="30" rows="5"></textarea>
-            <input type="button" value="Boka">
-        </form>
-    </section>
-
-    <section class="findus">
       
-    </section>
-  </div>
-    <footer class="footer"></footer>
+    <h1 id="products">Behandlingar</h1>
+      <section class="card">
+        <div class="card__1">
+          <div class="card__1--img"></div>
+          <p class="card__1--txt">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+            est.
+          </p>
+          <div class="card__1--price">500kr</div>
+          <button class="card__1--btn">Boka</button>
+        </div>
+        <div class="card__2">
+          <div class="card__2--img"></div>
+          <p class="card__2--txt">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, magnam!
+          </p>
+          <div class="card__2--price">600kr</div>
+          <button class="card__2--btn">Boka</button>
+        </div>
+        <div class="card__3">
+          <div class="card__3--img"></div>
+          <p class="card__3--txt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            ullam!
+          </p>
+          <div class="card__3--price">450kr</div>
+          <button class="card__3--btn">Boka</button>
+        </div>
+      </section>
 
-    
-</body>
+      <section class="booking">
+        <h1 id="boka">Boka tid</h1>
+        <form>
+          <label for="name">Namn</label>
+          <input type="text" placeholder="Namn" />
+          <label for="tel">Nummer</label>
+          <input type="number" placeholder="+46" />
+          <label for="email">Email</label>
+          <input type="email" name="" id="" placeholder="namn@mail.com"/>
+          <label for="msg">Meddelande</label>
+          <textarea name="msg" id="" cols="40" rows="5" placeholder="Meddelande..."></textarea>
+          <button>Boka</button>
+        </form>
+      </section>
+
+    </div>
+
+
+    <footer class="footer">
+      <div class="findus__adress">
+        <p>
+          Rinas Salong <br>
+          Gatan 85 <br>
+          123 23 Stockholm
+        </p>
+      </div>
+
+    </footer>
+  </body>
 </html>

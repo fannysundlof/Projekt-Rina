@@ -1,6 +1,19 @@
 
 $bg-col: #faebe4;
-$nav: #fee7e6;
+$nav: #f8eae9;
 $box-col: #e9ecf5;
 $box-col2: #fafcf9;
 $font-col: #f08080;
+$font-col2: rgb(149, 159, 189);
+$footer: rgb(149, 159, 189);
+
+
+@mixin button {
+    background-color: $font-col2;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
