@@ -25,6 +25,7 @@ h1 {
 }
 
 /* NAVIGERING */ 
+
 .header {
     position: fixed;
     width: 100%;
@@ -106,16 +107,3 @@ h1 {
         font-size: 1.3rem;
     }
 }
-
-
-// retina screen fix
-/* .logo {
-    background-image: url('/images/my_image.png');
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
-     #logo {
-     background-image: url('/images/my_image@2x.png');
-     background-size: 200px 100px;
-   }
-} */
